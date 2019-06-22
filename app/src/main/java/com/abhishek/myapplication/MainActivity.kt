@@ -10,7 +10,7 @@ import kotlin.properties.Delegates.observable
 class MainActivity : AppCompatActivity() {
 
     val animationDuration: Long by lazy {
-        100 * 10
+        100 * 10L
     }
 
     var statusText: String by observable("") { prop, old, new ->
@@ -21,11 +21,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        animateBtn.setOnClickListener { minusFab.slideInFromBottom() }
+
 //        statusText = "Waiting for animation to start"
-        container.postDelayed({
-//            statusText = "Running Animation"
-            container.slideInFromBottom(animationDuration =  this.animationDuration)
-        }, 1000)
+//        statusText = "Running Animation"
     }
 
     fun dataClassTest() {
