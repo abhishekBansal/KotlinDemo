@@ -1,7 +1,5 @@
 package com.abhishek.myapplication.npe;
 
-import android.util.Log;
-
 public class NpeJava {
     public int function(String b) {
         int length;
@@ -14,76 +12,11 @@ public class NpeJava {
         return length;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public int function2(String b) {
         return b != null ? b.length() : -1;
         //     b?.length ?: -1
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public void function3(String b) {
         int length;
@@ -95,7 +28,6 @@ public class NpeJava {
 
         System.out.println(length);
     }
-
 }
 
 

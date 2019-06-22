@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 
 public class HigherOrderFunctionJava {
 
-    void normalFun(int a, int b) {
+    private void normalFun(int a, int b) {
         System.out.println(a + b);
     }
 
@@ -25,7 +25,7 @@ public class HigherOrderFunctionJava {
     }
 
     // Method as return type
-    BiConsumer<Integer, Integer> action() {
+    private BiConsumer<Integer, Integer> action() {
         return this::normalFun;
     }
 

@@ -9,7 +9,7 @@ import kotlin.properties.Delegates.observable
 
 class MainActivity : AppCompatActivity() {
 
-    val animationDuration: Int by lazy {
+    val animationDuration: Long by lazy {
         100 * 10
     }
 
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 //        statusText = "Waiting for animation to start"
         container.postDelayed({
 //            statusText = "Running Animation"
-            container.slideInFromBottom()
+            container.slideInFromBottom(animationDuration =  this.animationDuration)
         }, 1000)
     }
 

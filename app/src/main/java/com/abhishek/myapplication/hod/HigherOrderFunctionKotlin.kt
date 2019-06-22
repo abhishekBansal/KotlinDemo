@@ -1,10 +1,5 @@
 package com.abhishek.myapplication.hod
 
-
-
-
-
-
 class HigherOrderFunctionKotlin {
 
     fun normalFun(a: Int, b: Int) {
@@ -18,19 +13,15 @@ class HigherOrderFunctionKotlin {
         else str
     }
 
-
     // Method as return type
     fun action(): (Int, Int) -> Unit {
         return this::normalFun
     }
 
-
-
     // Consuming Method as Return type
     fun helper() {
         action().invoke(10,30)
     }
-
 
     fun doSomethingAlso(elements: List<String>): String? {
         return elements.asSequence().groupBy { it }
@@ -40,7 +31,4 @@ class HigherOrderFunctionKotlin {
             .map { it.first }
             .firstOrNull()
     }
-
-
-
 }

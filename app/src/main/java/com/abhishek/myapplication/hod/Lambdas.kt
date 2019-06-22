@@ -1,9 +1,5 @@
 package com.abhishek.myapplication.hod
 
-import android.util.Log
-
-
-
 class Lambdas {
 
     val lambda = { println("No argument No return lambda") }
@@ -25,7 +21,6 @@ class Lambdas {
         val a = this::lamdaReturn
         a()
     }
-
 
     fun lamdaReturn(): () -> String {
         val abc by lazy { "ABC" }
