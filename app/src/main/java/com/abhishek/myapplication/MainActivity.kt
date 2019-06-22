@@ -28,22 +28,6 @@ class MainActivity : AppCompatActivity() {
         }, 1000)
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     fun dataClassTest() {
         // KotlinDataClass
         val data = KotlinDataClass("XYZ", 26,"Delhi/NCR","ABC")
@@ -51,19 +35,6 @@ class MainActivity : AppCompatActivity() {
         // Java Data Class
         val dataJava = JavaDataClass( "XYZ", 26,"Delhi/NCR","ABC")
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     fun immutabilityUsingDataClasses() {
         val data = KotlinDataClass("XYZ", 26,"Delhi/NCR","ABC")
