@@ -13,9 +13,11 @@ class Lambdas {
     fun main() {
         val value0 = lambda
         value0.invoke()
+        value0()
 
         val value1 = lambda1
         lambda1(2)
+        lambda1.invoke(2)
 
         val value2 = lambda1Return
         val answer = value2(9)

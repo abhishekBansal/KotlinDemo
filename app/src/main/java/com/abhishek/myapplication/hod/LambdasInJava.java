@@ -13,6 +13,7 @@ public class LambdasInJava {
     void main() {
         Runnable value0 = lambda;
         lambda.run();
+//        lambda();
 
         Consumer<Integer> value1 = lambda1;
         value1.accept(2);
@@ -23,6 +24,7 @@ public class LambdasInJava {
         Supplier<String> a = lambdaReturn();
         a.get();
     }
+
 
     Supplier<String> lambdaReturn() {
         String abc = "abc";
